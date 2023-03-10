@@ -22,4 +22,6 @@ router.get('/item/incomplete/:id',  todoController.markItemIncomplete);
 
 router.get('/register', userController.renderRegistration);
 router.post('/register', userController.register);
+router.get('/login', userController.renderLogin);
+router.post('/login', userController.authenticate);
 module.exports = router;
